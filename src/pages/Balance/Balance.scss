@@ -1,0 +1,20 @@
+@import "../../basic/variables.color";
+.balance-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  .subtitle{
+    color: $subtitle-text-color;
+  }
+  .balance {
+    font-size: 8vw;
+    color: $custom-green;
+    margin: 0;
+    &:after {
+      content: ' \20BD';
+      font-size: 5vw;
+      color: $subtitle-text-color;
+    }
+  }
+}

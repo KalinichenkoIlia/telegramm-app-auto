@@ -1,6 +1,7 @@
 import { SDKProvider, useLaunchParams } from '@telegram-apps/sdk-react';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 import { type FC, useEffect, useMemo } from 'react';
+import { AuthProvider } from "@/providers/AuthProvider"
 
 import { App } from '@/components/App.tsx';
 import { ErrorBoundary } from '@/components/ErrorBoundary.tsx';
@@ -35,9 +36,11 @@ const Inner: FC = () => {
 
   return (
     <TonConnectUIProvider manifestUrl={manifestUrl}>
+        <AuthProvider>
       <SDKProvider acceptCustomStyles debug={debug}>
-        <App/>
+              <App />
       </SDKProvider>
+        </AuthProvider>
     </TonConnectUIProvider>
   );
 };

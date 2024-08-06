@@ -10,7 +10,7 @@ export const Link: FC<LinkProps> = ({
   to,
   ...rest
 }) => {
-  const utils = useUtils();
+  const utils = useUtils(true);
 
   const onClick = useCallback<MouseEventHandler<HTMLAnchorElement>>((e) => {
     propsOnClick?.(e);

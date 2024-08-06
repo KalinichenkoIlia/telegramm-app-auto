@@ -64,7 +64,7 @@ export const TONConnectPage: FC = () => {
                 utils.openLink(wallet.aboutUrl);
               }}
             >
-              <Title level='3'>{wallet.name}</Title>
+              <Title level='9'>{wallet.name}</Title>
             </Cell>
           </Section>
           <TonConnectButton className='ton-connect-page__button-connected'/>

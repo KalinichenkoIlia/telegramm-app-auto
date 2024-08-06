@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.balance-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.balance-page__wrapper .subtitle {
+  color: rgb(112, 117, 121);
+}
+.balance-page__wrapper .balance {
+  font-size: 8vw;
+  color: rgb(49, 209, 88);
+  margin: 0;
+}
+.balance-page__wrapper .balance:after {
+  content: " ₽";
+  font-size: 5vw;
+  color: rgb(112, 117, 121);
+}
+
+/*# sourceMappingURL=Balance.css.map */
